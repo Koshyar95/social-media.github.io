@@ -1,0 +1,1860 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+* {
+    font-family: 'Bree Serif', serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #141212;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+::selection {
+    background: #0f1ddd;
+    color: #ffffff;
+}
+.Tupac {
+    display: flex;
+    justify-content: center;
+    background: #000000;
+    width: 100%;
+    height: 280px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+}
+.pac-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.pac-btn-responsive {
+    position: relative;
+    top: -50px;
+}
+.pac-btn a {
+    position: relative;
+    top: -100px;
+    left: 820px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 10px;
+    text-transform: uppercase;
+    background: #0f1ddd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.pac-btn a span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    transition: 0s ease-in;
+}
+.pac-btn a:hover span {
+    transition: 0.4s ease-in;
+    transform: translateY(-100%);
+}
+.pac-btn a:before {
+    content: '';
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.4s ease-in;
+}
+.pac-btn a:hover:before {
+    bottom: -150px;
+}
+.pac-btn a:nth-child(2):before {
+    bottom: 40px;
+}
+.pac-btn a:nth-child(2):before:hover {
+    bottom: -40px;
+}
+.pac-photo img {
+    border-radius: 100%;
+    width: 185px;
+    border: 2px solid #000000;
+    position: relative;
+    top: 50px;
+    left: -930px;
+    z-index: 1;
+    -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  }  
+.pac-name {
+    position: relative;
+    top: 75px;
+    left: -140px;
+    font-size: 17px;
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+.pac-tick {
+    width: 30px;
+    position: relative;
+    top: 5px;
+} 
+.pac-bio p {
+    position: relative;
+    top: 135px;
+    left: -380px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }  
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -72px;
+    color: #ffffff;
+    border-radius: 12px;
+    background: #0f1ddd;
+    height: 100px;
+    -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+ul {
+    display: flex;
+}
+ul span {
+    text-transform: uppercase;
+    
+}
+li {
+    list-style: none;
+    margin: 0.9rem;
+    font-size: 35px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: -10px;
+    left: 400px;
+    padding: 10px;
+}
+.flwrs {
+    position: relative;
+    left: -180px;    
+}
+.flwing {
+    position: relative;
+    left: -60px;
+}
+.posts {
+    position: relative;
+    left: 70px;
+}
+.flwrs-span {
+    position: relative;
+    top: 45px;
+    left: 110px;
+}
+.flwing-span {
+    position: relative;
+    top: 45px;
+    left: 245px;
+}
+.posts-span {
+    position: relative;
+    top: 45px;
+    left: 380px;
+}
+.introduction {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    width: 35%;
+    height: 200px;
+    position: relative;
+    top: -45px;
+    left: 15px;
+}
+.intro-text {
+    display: flex;
+}
+.intro-text h3 {
+    position: relative;
+    left: 10px;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.intro-text i {
+    position: relative;
+    top: 20px;
+    left: 270px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #4A90E3;
+}
+.intro-text i:hover {
+    color: #0f1ddd;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+.about p {
+    position: relative;
+    top: -10px;
+    left: 45px;
+}
+.img1 {
+    width: 24px;
+    position: relative;
+    top: -128px;
+    left: 20px;
+}
+.img2 {
+    width: 25px;
+    position: relative;
+    top: -88px;
+    left: -9px;
+}
+.img3 {
+    width: 25px;
+    position: relative;
+    top: -50px;
+    left: -37px;
+}
+.Following {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    width: 700px;
+    height: 800px;
+    position: relative;
+    top: -263px;
+    left: 525px;
+}
+.Following button {
+    background: #0f1ddd;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    width: 130px;
+    cursor: pointer;
+    height: 25px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 10px;
+    border-radius: 2px;
+    position: relative;
+    left: 390px;
+}
+.Following button:hover {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.Following h3 {
+    font-size: 22px;
+    cursor: pointer;
+}
+.Following p {
+    color: rgb(100, 100, 100);
+}
+.Following i {
+    cursor: pointer;
+    color: #4A90E3;
+    font-size: 22px;
+}
+.Following i:hover {
+    color: #0f1ddd;
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}  
+.flw-images {
+    border-radius: 100%;
+    border: 2px solid #000000;
+    width: 110px;
+    cursor: pointer;
+}
+.blue-tick {
+    width: 25px;
+}
+.Dre .blue-tick {
+    position: relative;
+    top: 6px;
+    left: 2px;
+}
+.flw-text h2 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    position: relative;
+    top: 15px;
+    left: 13px;
+}
+.flw-icon {
+    position: relative;
+    top: -35px;
+    left: 660px;
+    cursor: pointer;
+}
+.flw-icon i {
+    color: #4A90E3;
+    font-size: 23px;
+}
+.flw-icon i:hover {
+    color: #0f1ddd;
+    -webkit-animation: rotate-center 0.6s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: rotate-center 0.6s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+.Dre img {
+    position: relative;
+    left: 80px;
+    top: -95px;
+}
+.Dre h3 {
+    position: relative;
+    top: 15px;
+    left: 210px;
+}
+.Dre p {
+    position: relative;
+    top: -7px;
+    left: 210px;
+}
+.flw-btn-dre {
+    position: relative;
+    top: -160px;
+}
+.Dre i {
+    position: relative;
+    top: -158px;
+    left: 400px;
+}
+.Snoop img {
+    position: relative;
+    left: 80px;
+    top: -190px;
+}
+.Snoop h3 {
+    position: relative;
+    top: -80px;
+    left: 210px;
+}
+.Snoop p {
+    position: relative;
+    top: -103px;
+    left: 210px;
+}
+.Snoop .blue-tick {
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+.flw-btn-snoop {
+    position: relative;
+    top: -250px;
+}
+.Snoop i {
+    position: relative;
+    top: -247px;
+    left: 400px;
+}
+.Notorious img {
+    position: relative;
+    left: 80px;
+    top: -285px;
+}
+.Notorious h3 {
+    position: relative;
+    top: -170px;
+    left: 210px;
+}
+.Notorious p {
+    position: relative;
+    top: -193px;
+    left: 210px;
+}
+.Notorious .blue-tick {
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+.flw-btn-big {
+    position: relative;
+    top: -345px;
+}
+.Notorious i {
+    position: relative;
+    top: -343px;
+    left: 400px;
+}
+.Ice img {
+    position: relative;
+    left: 80px;
+    top: -380px;
+}
+.Ice h3 {
+    position: relative;
+    top: -265px;
+    left: 210px;
+}
+.Ice p {
+    position: relative;
+    top: -287px;
+    left: 210px;
+}
+.Ice .blue-tick {
+    position: relative;
+    top: 6px;
+    left: 3px;
+}
+.flw-btn-ice {
+    position: relative;
+    top: -440px;
+}
+.Ice i {
+    position: relative;
+    top: -437px;
+    left: 400px;
+}
+.Eazy img {
+    position: relative;
+    left: 80px;
+    top: -475px;
+}
+.Eazy h3 {
+    position: relative;
+    top: -364px;
+    left: 210px;
+}
+.Eazy p {
+    position: relative;
+    top: -385px;
+    left: 210px;
+}
+.Eazy .blue-tick {
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+.Eazy .flw-btn-e {
+    position: relative;
+    top: -539px;
+}
+.Eazy i {
+    position: relative;
+    top: -539px;
+    left: 400px;
+}
+.post {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    width: 38%;
+    height: 590px;
+    position: relative;
+    top: -820px;
+    left: 15px;
+}
+.pac-pic-post img {
+    border-radius: 100%;
+    width: 70px;
+    border: 2px solid #000000;
+    position: relative;
+    top: 25px;
+    left: 16px;
+}
+.notification p {
+    position: relative;
+    top: -55px;
+    left: 105px;
+    font-size: 15px;
+}
+.ellipsis i {
+    position: relative;
+    top: -110px;
+    left: 430px;
+    cursor: pointer;
+    color: #4A90E3;
+    font-size: 23px;
+}
+.ellipsis i:hover {
+    color: #0f1ddd;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+	animation: rotate-center 0.6s ease-in-out both;
+}
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+.hours-ago p {
+    position: relative;
+    top: -108px;
+    left: 105px;
+    font-size: 14px;
+    color: rgb(100, 100, 100); 
+}
+.post-caption p {
+    position: relative;
+    top: -80px;
+    left: 20px;
+    font-size: 16px;
+}
+.post-photo img {
+    position: relative;
+    top: -70px;
+    left: 20px;
+    width: 435px;
+}
+.post-btns img {
+    cursor: pointer;
+    width: 30px;
+}
+.post-btns .heart {
+    position: relative;
+    top: -50px;
+    left: 15px;
+}
+.post-btns .comment {
+    position: relative;
+    top: -50px;
+    left: 35px;
+}
+.post-btns .share {
+    position: relative;
+    top: -50px;
+    left: 55px;
+}
+.post-btns span {
+    font-size: 18px;
+}
+.likes {
+    position: relative;
+    top: -58px;
+    left: 14px;
+}
+.comments {
+    position: relative;
+    top: -58px;
+    left: 34px;
+}
+.shared {
+    position: relative;
+    top: -58px;
+    left: 54px;
+}
+.pac-birth {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    width: 34%;
+    height: 350px;
+    position: relative;
+    top: -770px;
+    left: 20px;
+}
+.pac-child img {
+    width: 400px;
+    position: relative;
+    top: 10px;
+    left: 11px;
+}
+.month {
+    background: #0f1ddd;
+    width: 75px;
+    height: 35px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    top: -260px;
+    left: 30px;
+}
+.month h4 {
+    text-align: center;
+    position: relative;
+    top: 5px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.date {
+    background: rgba(83, 81, 81, 0.6);
+    width: 75px;
+    height: 35px;
+    border-radius: 0 0 3px 3px;
+    position: relative;
+    top: -290px;
+    left: 30px;
+}
+.date h4 {
+    text-align: center;
+    position: relative;
+    top: 1px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.birth-text h3 {
+    position: relative;
+    top: -125px;
+    left: 15px;
+    font-size: 17px;
+}
+.time p {
+    position: relative;
+    top: -140px;
+    left: 15px;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+.video {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    width: 750px;
+    height: 710px;
+    position: relative;
+    top: -1120px;
+    left: 480px;
+}
+.vid-pic img {
+    border-radius: 100%;
+    border: 2px solid #000000;
+    width: 100px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.vid-notification p {
+    position: relative;
+    top: -80px;
+    left: 140px;
+    font-size: 16px;
+}
+.vid-minutes-ago p {
+    position: relative;
+    top: -95px;
+    left: 140px;
+    color: rgb(100, 100, 100);
+    font-size: 16px;
+}
+.vid-ellipsis i {
+    position: relative;
+    top: -170px;
+    left: 690px;
+    cursor: pointer;
+    color: #4A90E3;
+    font-size: 23px;
+}
+.vid-ellipsis i:hover {
+    color: #0f1ddd;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  } 
+.clip {
+    position: relative;
+    top: -60px;
+    left: 15px;
+}
+.clip iframe {
+    border-radius: 10px;
+}
+.caption {
+    position: relative;
+    top: -60px;
+    left: 15px;
+    font-size: 17px;
+}
+.views {
+    position: relative;
+    top: -70px;
+    left: 15px;
+    color: rgb(100, 100, 100);
+}
+.vid-icons img {
+    cursor: pointer;
+    width: 30px;
+}
+.vid-icons span {
+    font-size: 18px;
+}
+.vid-heart {
+    position: relative;
+    left: 430px;
+    top: -80px;
+}
+.vid-likes {
+    position: relative;
+    left: 430px;
+    top: -90px;
+}
+.vid-comment {
+    position: relative;
+    left: 460px;
+    top: -80px;
+}
+.vid-comments {
+    position: relative;
+    left: 460px;
+    top: -90px;
+}
+.vid-share {
+    position: relative;
+    left: 490px;
+    top: -80px;
+}
+.vid-shared {
+    position: relative;
+    left: 490px;
+    top: -90px;
+}
+.Music {
+    position: relative;
+    top: -1100px;
+    left: 525px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    width: 700px;
+    height: 85.8rem;
+}
+.Music-title {
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+}
+.song-names h2 {
+    position: relative;
+    top: 250px;
+    left: 50px;
+}
+.songs p {
+    position: relative;
+    left: 50px;
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+}
+.Trust p {
+    position: relative;
+    top: 170px;
+    left: 170px;
+}
+.Trust .singer {
+    position: relative;
+    top: 139px;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.Trust img {
+    position: relative;
+    top: 265px;
+    left: 70px;
+}
+.songs i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 100%;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.songs i:hover {
+    background: #000000;
+    color: #ffffff;
+    -webkit-animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.65s linear both;
+}
+@-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+.Trust .download {
+    position: relative;
+    top: 74px;
+    left: 430px;
+}
+.Trust .spotify {
+    position: relative;
+    top: 30px;
+    left: 490px;
+}
+.Trust .share {
+    position: relative;
+    top: -15px;
+    left: 550px;
+}
+.Music .ellipsis-v {
+    background: #ffffff;
+    color: #000000;
+    position: relative;
+    top: -60px;
+    left: 810px;
+}
+.Music .ellipsis-v:hover {
+    background: #0f1ddd;
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+  }
+  @keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+  }
+.Ambitionz p {
+    position: relative;
+    top: -105px;
+    left: 170px;
+}
+.Ambitionz .singer {
+    position: relative;
+    top: -135px;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.Ambitionz img {
+    position: relative;
+    top: -10px;
+    left: 70px;
+}
+.Ambitionz .download {
+    position: relative;
+    top: -200px;
+    left: 430px;
+}
+.Ambitionz .spotify {
+    position: relative;
+    top: -245px;
+    left: 490px;
+}
+.Ambitionz .share {
+    position: relative;
+    top: -290px;
+    left: 550px;
+}
+.LA p {
+    position: relative;
+    top: -375px;
+    left: 170px;
+}
+.LA .singer {
+    position: relative;
+    top: -405px;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.LA img {
+    position: relative;
+    top: -280px;
+    left: 70px;
+}
+.LA .download {
+    position: relative;
+    top: -465px;
+    left: 430px;
+}
+.LA .spotify {
+    position: relative;
+    top: -510px;
+    left: 490px;
+}
+.LA .share {
+    position: relative;
+    top: -555px;
+    left: 550px;
+}
+.Life p {
+    position: relative;
+    top: -640px;
+    left: 170px;
+}
+.Life .singer {
+    position: relative;
+    top: -670px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.Life img {
+    position: relative;
+    top: -545px;
+    left: 70px;
+}
+.Life .download {
+    position: relative;
+    top: -730px;
+    left: 430px;
+}
+.Life .spotify {
+    position: relative;
+    top: -775px;
+    left: 490px;
+}
+.Life .share {
+    position: relative;
+    top: -820px;
+    left: 550px;
+}
+.Mama p {
+    position: relative;
+    top: -56.8rem;
+    left: 170px;
+}
+.Mama .singer {
+    position: relative;
+    top: -58.8rem;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.Mama img {
+    position: relative;
+    top: -50.6rem;
+    left: 70px;
+}
+.Mama .download {
+    position: relative;
+    top: -62.7rem;
+    left: 430px;
+}
+.Mama .spotify {
+    position: relative;
+    top: -65.5rem;
+    left: 490px;
+}
+.Mama .share {
+    position: relative;
+    top: -68.3rem;
+    left: 550px;
+}
+.Hit p {
+    position: relative;
+    top: -73.1rem;
+    left: 170px;
+}
+.Hit .singer {
+    position: relative;
+    top: -75.1rem;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.Hit img {
+    position: relative;
+    top: -67rem;
+    left: 70px;
+} 
+.Hit .download {
+    position: relative;
+    top: -78.8rem;
+    left: 430px;
+}
+.Hit .spotify {
+    position: relative;
+    top: -81.6rem;
+    left: 490px;
+}
+.Hit .share {
+    position: relative;
+    top: -84.4rem;
+    left: 550px;
+}
+.Changes p {
+    position: relative;
+    top: -89.1rem;
+    left: 170px;
+}
+.Changes .singer {
+    position: relative;
+    top: -91rem;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.Changes img {
+    position: relative;
+    top: -83.2rem;
+    left: 70px;
+}
+.Changes .download {
+    position: relative;
+    top: -95.2rem;
+    left: 430px;
+}
+.Changes .spotify {
+    position: relative;
+    top: -98rem;
+    left: 490px;
+}
+.Changes .share {
+    position: relative;
+    top: -100.8rem;
+    left: 550px;
+}
+.California p {
+    position: relative;
+    top: -105.2rem;
+    left: 170px;
+}
+.California .singer {
+    position: relative;
+    top: -107.1rem;
+    left: 170px;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.California img {
+    position: relative;
+    top: -99.3rem;
+    left: 70px;
+}
+.California .download {
+    position: relative;
+    top: -111.2rem;
+    left: 430px;
+}
+.California .spotify {
+    position: relative;
+    top: -114rem;
+    left: 490px;
+}
+.California .share {
+    position: relative;
+    top: -116.8rem;
+    left: 550px;
+}
+.songs img {
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.music-container {
+    border-radius: 15px;
+    background: #000000;
+    box-shadow:  5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    top: -150rem;
+    left: 32.2rem;
+    width: 450px;
+    margin: 100px;
+    z-index: 10;
+}
+.img-container {
+    position: relative;
+    width: 110px;
+}
+.img-container::after {
+    content: '';
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-container img {
+    width: inherit;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.action-btn {
+    background: #000000;
+    border: 0;
+    position: relative;
+    left: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+.action-btn:hover {
+    color: #f1eded;
+}
+.action-btn-big {
+    color: #ffffff;
+    font-size: 30px;
+}
+.action-btn:focus {
+    outline: 0;
+}
+.music-info {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 200px);
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    padding: 10px 10px 10px 150px;
+}
+#title {
+    position: relative;
+    left: -19px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+}
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.progress-container {
+    background: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+    position: relative;
+    left: -20px;
+}
+.progress {
+    background-color: #0f1ddd;
+    height: 100%;
+    width: 0;
+    transition: width 0.1s linear;
+}
+@media (max-width: 768px) {
+    .pac-photo img {
+        position: relative;
+        left: -535px;
+        width: 180px;
+    }
+}
+@media (max-width : 600px) {
+    .Tupac {
+           height: 390px; 
+        }   
+    .pac-photo img {
+           width: 145px;
+           position: relative;
+           top: 15px;
+           left: -304px;
+       }
+       .pac-name {
+           position: relative;
+           left: 160px;
+           top: 155px;
+           font-size: 14px;
+           white-space: nowrap;
+       }
+       .pac-bio p {
+            position: relative;
+            left: -75px;
+            top: 210px;
+            font-size: 12px;
+            white-space: nowrap;
+       }
+       .flwrs {
+           position: relative;
+           left: -420px;
+           font-size: 27px;
+       }
+       .flwrs-span {
+           position: relative;
+           left: -118px;
+           font-size: 15px;
+       }
+       .flwing {
+           position: relative;
+           left: -50px;
+           font-size: 27px;
+       }
+       .introduction {
+            width: 440px;
+       }
+       .pac-btn {
+            display: none;
+       }
+       .pac-btn-responsive  {
+            display: flex;
+            cursor: pointer;
+            position: relative;
+            top: 265px;    
+       }
+       .pac-btn-responsive i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f1ddd;
+            color: #ffffff;
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+       }
+       .responsive-plus {
+            position: relative;
+            left: 290px;
+        }
+        .responsive-plane {
+            position: relative;
+            left: 310px;
+        }
+        .responsive-spotify {
+            position: relative;
+            left: 330px;
+        }
+        .responsive-facebook {
+            position: relative;
+            left: 350px;
+        }
+       .pac-btn-responsive i:hover {
+            color: #00A2FF;
+            -webkit-animation: rotate-scale-up 0.65s linear both;
+            animation: rotate-scale-up 0.65s linear both;
+       }
+       @-webkit-keyframes rotate-scale-up {
+        0% {
+          -webkit-transform: scale(1) rotateZ(0);
+                  transform: scale(1) rotateZ(0);
+        }
+        50% {
+          -webkit-transform: scale(2) rotateZ(180deg);
+                  transform: scale(2) rotateZ(180deg);
+        }
+        100% {
+          -webkit-transform: scale(1) rotateZ(360deg);
+                  transform: scale(1) rotateZ(360deg);
+        }
+      }
+      @keyframes rotate-scale-up {
+        0% {
+          -webkit-transform: scale(1) rotateZ(0);
+                  transform: scale(1) rotateZ(0);
+        }
+        50% {
+          -webkit-transform: scale(2) rotateZ(180deg);
+                  transform: scale(2) rotateZ(180deg);
+        }
+        100% {
+          -webkit-transform: scale(1) rotateZ(360deg);
+                  transform: scale(1) rotateZ(360deg);
+        }
+      }
+      .Following {
+          position: relative;
+          top: -30px;
+          left: 20px;
+          width: 435px;
+          height: 650px;
+      }
+      .Following .flw-icon {
+          position: relative;
+          left: 390px;
+      }
+      .Following h3 {
+          font-size: 17px;
+          position: relative;
+          left: 115px;
+      }
+      .Following .flw-images {
+          position: relative;
+          left: 8px;  
+          width: 95px;
+      }
+      .Following p {
+          position: relative;
+          left: 115px;
+          font-size: 16px;
+      }
+      .Following .blue-tick {
+          width: 22px;
+      }
+      .Following button {
+          position: relative;
+          left: 170px;
+      }
+      .Dre .flw-btn-dre {
+          position: relative;
+          top: -140px;
+      }
+      .Snoop .flw-btn-snoop {
+          position: relative;
+          top: -230px;
+      }
+      .Notorious .flw-btn-big {
+          position: relative;
+          top: -325px;
+      }
+      .Ice .flw-btn-ice {
+          position: relative;
+          top: -420px;
+      }
+      .Eazy .flw-btn-e {
+          position: relative;
+          top: -520px;
+      }
+      .Following i {
+          position: relative;
+          left: 180px;
+      }
+      .Dre i {
+          position: relative;
+          top: -137px;
+      }
+      .Snoop i {
+          position: relative;
+          top: -227px;
+      }
+      .Notorious i {
+          position: relative;
+          top: -323px;        
+      }
+      .Ice i {
+          position: relative;
+          top: -418px;
+      }
+      .Eazy i {
+          position: relative;
+          top: -518px;
+      }
+      .post {
+          position: relative;
+          top: -3px;
+          width: 440px;
+          height: 550px;
+      }
+      .post .pac-pic-post {
+          width: 100px;
+      }
+      .post i {
+          position: relative;
+          left: 400px;
+      }
+      .post .post-photo img {
+          width: 400px;
+      }
+      .pac-birth {
+          position: relative;
+          top: 30px;
+          width: 430px;
+      }
+      .pac-birth .pac-child img {
+          width: 410px;
+          position: relative;
+          left: 10px;
+      }
+      .pac-birth .month {
+          position: relative;
+          top: -270px;
+      }
+      .pac-birth .date {
+          position: relative;
+          top: -300px;
+      }
+      .video {
+          position: relative;
+          top: 50px;
+          left: 10px;
+          width: 450px;
+          height: 580px;
+      }
+      .video .vid-pic img {
+          position: relative;
+          left: 10px;
+          width: 90px;
+      }
+      .video .vid-notification p {
+          position: relative;
+          top: -70px;
+          left: 115px;
+          font-size: 15px;
+      }
+      .video .vid-minutes-ago p {
+          position: relative;
+          top: -86px;
+          left: 115px;
+          font-size: 14px;
+      }
+      .vid-ellipsis i {
+          position: relative;
+          left: 410px;
+      }
+      .clip iframe {
+          position: relative;
+          left: -10px;  
+          width: 440px;
+          height: 310px;
+      }
+      .caption {
+          font-size: 16px;
+      }
+      .vid-heart {
+          position: relative;
+          left: 180px;
+      }
+      .vid-likes {
+          position: relative;
+          left: 181px;
+      }
+      .vid-comment {
+          position: relative;
+          left: 200px;
+      }
+      .vid-comments {
+          position: relative;
+          left: 201px;
+      }
+      .vid-share {
+          position: relative;
+          left: 221px;
+      }
+      .vid-shared {
+          position: relative;
+          left: 222px;
+      }
+      .Music .download, .spotify, .share {
+          display: none;
+      }
+      .Music {
+          position: relative;
+          top: 50px;
+          left: 10px;
+          width: 440px;
+          height: 85.4rem;
+      }
+      .Music img {
+          position: relative;
+          left: 10px;
+      }
+      .Music p {
+          position: relative;
+          left: 107px;
+      }
+      .Music .singer {
+          position: relative;
+          left: 108px;
+      }
+      .Music .ellipsis-v {
+          position: relative;
+          left: 385px;
+      }
+      .music-container {
+          position: relative;
+          top: -75rem;
+          left: -80px;
+          width: 360px;
+          height: 60px;
+      }
+      .action-btn {
+          position: relative;
+          left: 30px;
+      }
+      .Trust .ellipsis-v {
+          position: relative;
+          top: -20px;
+      }
+      .Ambitionz img {
+          position: relative;
+          top: 25px; 
+      }
+      .Ambitionz p {
+          position: relative;
+          top: -69px;
+      }
+      .Ambitionz .singer {
+          position: relative;
+          top: -99px;
+      }
+      .Ambitionz .ellipsis-v {
+          position: relative;
+          top: -255px;
+      }
+      .LA img {
+          position: relative;
+          top: -210px;
+      }
+      .LA p {
+          position: relative;
+          top: -303px;
+      }
+      .LA .singer {
+          position: relative;
+          top: -333px;
+      }
+      .LA .ellipsis-v {
+          position: relative;
+          top: -490px;
+      }
+      .Life img {
+          position: relative;
+          top: -440px;
+      }
+      .Life p {
+          position: relative;
+          top: -535px;
+      }
+      .Life .singer {
+          position: relative;
+          top: -565px;
+      }
+      .Life .ellipsis-v {
+          position: relative;
+          top: -45rem;
+      }
+      .Mama img {
+          position: relative;
+          top: -41.7rem;
+      }
+      .Mama p {
+          position: relative;
+          top: -47.5rem;
+      }
+      .Mama .singer {
+          position: relative;
+          top: -49.4rem;
+      }
+      .Mama .ellipsis-v {
+          position: relative;
+          top: -59.3rem;
+      }
+      .Hit img {
+          position: relative;
+          top: -55.8rem;
+      }
+      .Hit p {
+          position: relative;
+          top: -61.7rem;
+      }
+      .Hit .singer {
+          position: relative;
+          top: -63.6rem;
+      }
+      .Hit .ellipsis-v {
+          position: relative;
+          top: -73.3rem;
+      }
+      .Changes img {
+          position: relative;
+          top: -70rem;
+      }
+      .Changes p {
+          position: relative;
+          top: -75.8rem;
+      }
+      .Changes .singer {
+          position: relative;
+          top: -77.7rem;
+      }
+      .Changes .ellipsis-v {
+          position: relative;
+          top: -87.5rem;
+      }
+      .California img {
+          position: relative;
+          top: -84rem;
+      }
+      .California p {
+          position: relative;
+          top: -89.7rem;
+      }
+      .California .singer {
+          position: relative;
+          top: -91.6rem;
+      }
+      .California .ellipsis-v {
+          position: relative;
+          top: -101.4rem;
+      }
+    }
